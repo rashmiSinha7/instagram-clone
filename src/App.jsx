@@ -1,23 +1,19 @@
-import {useEffect} from 'react';
-import './App.css'
-import axios from 'axios';
+
+import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router";
+import Login from "./components/Login";
 
 function App() {
 
-  useEffect(()=>{
-    axios.get('/api/users').then((res)=>{
-      console.log(res.data)
-    })
-    
-  },[])
-
-
   return (
     <>
-  <div className='text-3xl font-bold underline'> Hiii</div>
-
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" index element={<Login/>} />
+        </Routes>
+      </BrowserRouter>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

@@ -5,8 +5,8 @@ import App from "./App.jsx";
 
 async function prepare() {
   if (import.meta.env.DEV) {
-    const { worker } = await import('./mocks/browser');
-    return  worker.start();
+    const { worker } = await import("./mocks/browser");
+    return worker.start();
   }
 }
 
