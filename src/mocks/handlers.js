@@ -17,6 +17,10 @@ const handlers = [
       role: "user",
     });
   }),
+  http.get("*/user/home", async () => {
+    const response = await import ("./data/mock_instagram_home.json");
+    return HttpResponse.json(response.default);
+  }),
 ];
 
 export default handlers;
