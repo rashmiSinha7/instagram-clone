@@ -2,6 +2,7 @@ import { useState } from "react";
 import axios from "axios";
 //import { useSelector } from "react-redux";
 import "../App.css";
+import { useNavigate } from "react-router";
 import { constants } from "../constants";
 
 const Login = () => {
@@ -17,6 +18,8 @@ const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
+  const navigate = useNavigate();
+
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
@@ -25,6 +28,7 @@ const Login = () => {
         password,
       });
       localStorage.setItem("token", res.data.token);
+      navigate(`/account/${res.data.userName}`);
     } catch (err) {
       console.error("Login failed", err);
     }

@@ -1,0 +1,633 @@
+{
+  "user": {
+    "id": "1000",
+    "username": "current_user",
+    "full_name": "Current User",
+    "profile_picture": "https://example.com/profiles/current_user.jpg",
+    "is_verified": true
+  },
+  "stories": [
+    {
+      "id": "story_1",
+      "user": {
+        "id": "user_1",
+        "username": "user1",
+        "profile_picture": "https://example.com/profiles/user1.jpg",
+        "is_verified": false
+      },
+      "media": [
+        {
+          "id": "media_story_1",
+          "type": "video",
+          "url": "https://example.com/stories/user1_1.mp4",
+          "timestamp": "2025-04-21T17:15:47.446928Z"
+        }
+      ],
+      "is_seen": false
+    },
+    {
+      "id": "story_2",
+      "user": {
+        "id": "user_2",
+        "username": "user2",
+        "profile_picture": "https://example.com/profiles/user2.jpg",
+        "is_verified": true
+      },
+      "media": [
+        {
+          "id": "media_story_2",
+          "type": "image",
+          "url": "https://example.com/stories/user2_1.jpg",
+          "timestamp": "2025-04-21T17:00:47.446928Z"
+        }
+      ],
+      "is_seen": false
+    },
+    {
+      "id": "story_3",
+      "user": {
+        "id": "user_3",
+        "username": "user3",
+        "profile_picture": "https://example.com/profiles/user3.jpg",
+        "is_verified": false
+      },
+      "media": [
+        {
+          "id": "media_story_3",
+          "type": "video",
+          "url": "https://example.com/stories/user3_1.mp4",
+          "timestamp": "2025-04-21T16:45:47.446928Z"
+        }
+      ],
+      "is_seen": true
+    },
+    {
+      "id": "story_4",
+      "user": {
+        "id": "user_4",
+        "username": "user4",
+        "profile_picture": "https://example.com/profiles/user4.jpg",
+        "is_verified": true
+      },
+      "media": [
+        {
+          "id": "media_story_4",
+          "type": "image",
+          "url": "https://example.com/stories/user4_1.jpg",
+          "timestamp": "2025-04-21T16:30:47.446928Z"
+        }
+      ],
+      "is_seen": false
+    },
+    {
+      "id": "story_5",
+      "user": {
+        "id": "user_5",
+        "username": "user5",
+        "profile_picture": "https://example.com/profiles/user5.jpg",
+        "is_verified": false
+      },
+      "media": [
+        {
+          "id": "media_story_5",
+          "type": "video",
+          "url": "https://example.com/stories/user5_1.mp4",
+          "timestamp": "2025-04-21T16:15:47.446928Z"
+        }
+      ],
+      "is_seen": false
+    },
+    {
+      "id": "story_6",
+      "user": {
+        "id": "user_6",
+        "username": "user6",
+        "profile_picture": "https://example.com/profiles/user6.jpg",
+        "is_verified": true
+      },
+      "media": [
+        {
+          "id": "media_story_6",
+          "type": "image",
+          "url": "https://example.com/stories/user6_1.jpg",
+          "timestamp": "2025-04-21T16:00:47.446928Z"
+        }
+      ],
+      "is_seen": true
+    },
+    {
+      "id": "story_7",
+      "user": {
+        "id": "user_7",
+        "username": "user7",
+        "profile_picture": "https://example.com/profiles/user7.jpg",
+        "is_verified": false
+      },
+      "media": [
+        {
+          "id": "media_story_7",
+          "type": "video",
+          "url": "https://example.com/stories/user7_1.mp4",
+          "timestamp": "2025-04-21T15:45:47.446928Z"
+        }
+      ],
+      "is_seen": false
+    },
+    {
+      "id": "story_8",
+      "user": {
+        "id": "user_8",
+        "username": "user8",
+        "profile_picture": "https://example.com/profiles/user8.jpg",
+        "is_verified": true
+      },
+      "media": [
+        {
+          "id": "media_story_8",
+          "type": "image",
+          "url": "https://example.com/stories/user8_1.jpg",
+          "timestamp": "2025-04-21T15:30:47.446928Z"
+        }
+      ],
+      "is_seen": false
+    },
+    {
+      "id": "story_9",
+      "user": {
+        "id": "user_9",
+        "username": "user9",
+        "profile_picture": "https://example.com/profiles/user9.jpg",
+        "is_verified": false
+      },
+      "media": [
+        {
+          "id": "media_story_9",
+          "type": "video",
+          "url": "https://example.com/stories/user9_1.mp4",
+          "timestamp": "2025-04-21T15:15:47.446928Z"
+        }
+      ],
+      "is_seen": true
+    },
+    {
+      "id": "story_10",
+      "user": {
+        "id": "user_10",
+        "username": "user10",
+        "profile_picture": "https://example.com/profiles/user10.jpg",
+        "is_verified": true
+      },
+      "media": [
+        {
+          "id": "media_story_10",
+          "type": "image",
+          "url": "https://example.com/stories/user10_1.jpg",
+          "timestamp": "2025-04-21T15:00:47.446928Z"
+        }
+      ],
+      "is_seen": false
+    }
+  ],
+  "feed": [
+    {
+      "post_id": "post_1",
+      "user": {
+        "id": "user_2",
+        "username": "user2",
+        "profile_picture": "https://example.com/profiles/user2.jpg",
+        "is_verified": true
+      },
+      "media": [
+        {
+          "id": "media_1",
+          "type": "video",
+          "url": "https://example.com/posts/user1_1.mp4"
+        }
+      ],
+      "caption": "This is caption for post 1",
+      "likes_count": 965,
+      "is_liked": false,
+      "comments_count": 15,
+      "comments": [],
+      "timestamp": "2025-04-21T17:20:47.446997Z"
+    },
+    {
+      "post_id": "post_2",
+      "user": {
+        "id": "user_3",
+        "username": "user3",
+        "profile_picture": "https://example.com/profiles/user3.jpg",
+        "is_verified": false
+      },
+      "media": [
+        {
+          "id": "media_2",
+          "type": "image",
+          "url": "https://example.com/posts/user2_1.jpg"
+        }
+      ],
+      "caption": "This is caption for post 2",
+      "likes_count": 748,
+      "is_liked": false,
+      "comments_count": 20,
+      "comments": [],
+      "timestamp": "2025-04-21T17:10:47.446997Z"
+    },
+    {
+      "post_id": "post_3",
+      "user": {
+        "id": "user_4",
+        "username": "user4",
+        "profile_picture": "https://example.com/profiles/user4.jpg",
+        "is_verified": true
+      },
+      "media": [
+        {
+          "id": "media_3",
+          "type": "video",
+          "url": "https://example.com/posts/user3_1.mp4"
+        }
+      ],
+      "caption": "This is caption for post 3",
+      "likes_count": 558,
+      "is_liked": false,
+      "comments_count": 3,
+      "comments": [],
+      "timestamp": "2025-04-21T17:00:47.446997Z"
+    },
+    {
+      "post_id": "post_4",
+      "user": {
+        "id": "user_5",
+        "username": "user5",
+        "profile_picture": "https://example.com/profiles/user5.jpg",
+        "is_verified": false
+      },
+      "media": [
+        {
+          "id": "media_4",
+          "type": "image",
+          "url": "https://example.com/posts/user4_1.jpg"
+        }
+      ],
+      "caption": "This is caption for post 4",
+      "likes_count": 929,
+      "is_liked": true,
+      "comments_count": 12,
+      "comments": [],
+      "timestamp": "2025-04-21T16:50:47.446997Z"
+    },
+    {
+      "post_id": "post_5",
+      "user": {
+        "id": "user_6",
+        "username": "user6",
+        "profile_picture": "https://example.com/profiles/user6.jpg",
+        "is_verified": true
+      },
+      "media": [
+        {
+          "id": "media_5",
+          "type": "video",
+          "url": "https://example.com/posts/user5_1.mp4"
+        }
+      ],
+      "caption": "This is caption for post 5",
+      "likes_count": 142,
+      "is_liked": false,
+      "comments_count": 6,
+      "comments": [],
+      "timestamp": "2025-04-21T16:40:47.446997Z"
+    },
+    {
+      "post_id": "post_6",
+      "user": {
+        "id": "user_7",
+        "username": "user7",
+        "profile_picture": "https://example.com/profiles/user7.jpg",
+        "is_verified": false
+      },
+      "media": [
+        {
+          "id": "media_6",
+          "type": "image",
+          "url": "https://example.com/posts/user6_1.jpg"
+        }
+      ],
+      "caption": "This is caption for post 6",
+      "likes_count": 486,
+      "is_liked": false,
+      "comments_count": 2,
+      "comments": [],
+      "timestamp": "2025-04-21T16:30:47.446997Z"
+    },
+    {
+      "post_id": "post_7",
+      "user": {
+        "id": "user_8",
+        "username": "user8",
+        "profile_picture": "https://example.com/profiles/user8.jpg",
+        "is_verified": true
+      },
+      "media": [
+        {
+          "id": "media_7",
+          "type": "video",
+          "url": "https://example.com/posts/user7_1.mp4"
+        }
+      ],
+      "caption": "This is caption for post 7",
+      "likes_count": 254,
+      "is_liked": false,
+      "comments_count": 0,
+      "comments": [],
+      "timestamp": "2025-04-21T16:20:47.446997Z"
+    },
+    {
+      "post_id": "post_8",
+      "user": {
+        "id": "user_9",
+        "username": "user9",
+        "profile_picture": "https://example.com/profiles/user9.jpg",
+        "is_verified": false
+      },
+      "media": [
+        {
+          "id": "media_8",
+          "type": "image",
+          "url": "https://example.com/posts/user8_1.jpg"
+        }
+      ],
+      "caption": "This is caption for post 8",
+      "likes_count": 103,
+      "is_liked": true,
+      "comments_count": 15,
+      "comments": [],
+      "timestamp": "2025-04-21T16:10:47.446997Z"
+    },
+    {
+      "post_id": "post_9",
+      "user": {
+        "id": "user_10",
+        "username": "user10",
+        "profile_picture": "https://example.com/profiles/user10.jpg",
+        "is_verified": true
+      },
+      "media": [
+        {
+          "id": "media_9",
+          "type": "video",
+          "url": "https://example.com/posts/user9_1.mp4"
+        }
+      ],
+      "caption": "This is caption for post 9",
+      "likes_count": 269,
+      "is_liked": false,
+      "comments_count": 5,
+      "comments": [],
+      "timestamp": "2025-04-21T16:00:47.446997Z"
+    },
+    {
+      "post_id": "post_10",
+      "user": {
+        "id": "user_1",
+        "username": "user1",
+        "profile_picture": "https://example.com/profiles/user1.jpg",
+        "is_verified": false
+      },
+      "media": [
+        {
+          "id": "media_10",
+          "type": "image",
+          "url": "https://example.com/posts/user10_1.jpg"
+        }
+      ],
+      "caption": "This is caption for post 10",
+      "likes_count": 907,
+      "is_liked": false,
+      "comments_count": 6,
+      "comments": [],
+      "timestamp": "2025-04-21T15:50:47.446997Z"
+    },
+    {
+      "post_id": "post_11",
+      "user": {
+        "id": "user_2",
+        "username": "user2",
+        "profile_picture": "https://example.com/profiles/user2.jpg",
+        "is_verified": true
+      },
+      "media": [
+        {
+          "id": "media_11",
+          "type": "video",
+          "url": "https://example.com/posts/user11_1.mp4"
+        }
+      ],
+      "caption": "This is caption for post 11",
+      "likes_count": 940,
+      "is_liked": false,
+      "comments_count": 9,
+      "comments": [],
+      "timestamp": "2025-04-21T15:40:47.446997Z"
+    },
+    {
+      "post_id": "post_12",
+      "user": {
+        "id": "user_3",
+        "username": "user3",
+        "profile_picture": "https://example.com/profiles/user3.jpg",
+        "is_verified": false
+      },
+      "media": [
+        {
+          "id": "media_12",
+          "type": "image",
+          "url": "https://example.com/posts/user12_1.jpg"
+        }
+      ],
+      "caption": "This is caption for post 12",
+      "likes_count": 940,
+      "is_liked": true,
+      "comments_count": 13,
+      "comments": [],
+      "timestamp": "2025-04-21T15:30:47.446997Z"
+    },
+    {
+      "post_id": "post_13",
+      "user": {
+        "id": "user_4",
+        "username": "user4",
+        "profile_picture": "https://example.com/profiles/user4.jpg",
+        "is_verified": true
+      },
+      "media": [
+        {
+          "id": "media_13",
+          "type": "video",
+          "url": "https://example.com/posts/user13_1.mp4"
+        }
+      ],
+      "caption": "This is caption for post 13",
+      "likes_count": 168,
+      "is_liked": false,
+      "comments_count": 0,
+      "comments": [],
+      "timestamp": "2025-04-21T15:20:47.446997Z"
+    },
+    {
+      "post_id": "post_14",
+      "user": {
+        "id": "user_5",
+        "username": "user5",
+        "profile_picture": "https://example.com/profiles/user5.jpg",
+        "is_verified": false
+      },
+      "media": [
+        {
+          "id": "media_14",
+          "type": "image",
+          "url": "https://example.com/posts/user14_1.jpg"
+        }
+      ],
+      "caption": "This is caption for post 14",
+      "likes_count": 512,
+      "is_liked": false,
+      "comments_count": 16,
+      "comments": [],
+      "timestamp": "2025-04-21T15:10:47.446997Z"
+    },
+    {
+      "post_id": "post_15",
+      "user": {
+        "id": "user_6",
+        "username": "user6",
+        "profile_picture": "https://example.com/profiles/user6.jpg",
+        "is_verified": true
+      },
+      "media": [
+        {
+          "id": "media_15",
+          "type": "video",
+          "url": "https://example.com/posts/user15_1.mp4"
+        }
+      ],
+      "caption": "This is caption for post 15",
+      "likes_count": 784,
+      "is_liked": false,
+      "comments_count": 15,
+      "comments": [],
+      "timestamp": "2025-04-21T15:00:47.446997Z"
+    },
+    {
+      "post_id": "post_16",
+      "user": {
+        "id": "user_7",
+        "username": "user7",
+        "profile_picture": "https://example.com/profiles/user7.jpg",
+        "is_verified": false
+      },
+      "media": [
+        {
+          "id": "media_16",
+          "type": "image",
+          "url": "https://example.com/posts/user16_1.jpg"
+        }
+      ],
+      "caption": "This is caption for post 16",
+      "likes_count": 408,
+      "is_liked": true,
+      "comments_count": 7,
+      "comments": [],
+      "timestamp": "2025-04-21T14:50:47.446997Z"
+    },
+    {
+      "post_id": "post_17",
+      "user": {
+        "id": "user_8",
+        "username": "user8",
+        "profile_picture": "https://example.com/profiles/user8.jpg",
+        "is_verified": true
+      },
+      "media": [
+        {
+          "id": "media_17",
+          "type": "video",
+          "url": "https://example.com/posts/user17_1.mp4"
+        }
+      ],
+      "caption": "This is caption for post 17",
+      "likes_count": 140,
+      "is_liked": false,
+      "comments_count": 3,
+      "comments": [],
+      "timestamp": "2025-04-21T14:40:47.446997Z"
+    },
+    {
+      "post_id": "post_18",
+      "user": {
+        "id": "user_9",
+        "username": "user9",
+        "profile_picture": "https://example.com/profiles/user9.jpg",
+        "is_verified": false
+      },
+      "media": [
+        {
+          "id": "media_18",
+          "type": "image",
+          "url": "https://example.com/posts/user18_1.jpg"
+        }
+      ],
+      "caption": "This is caption for post 18",
+      "likes_count": 126,
+      "is_liked": false,
+      "comments_count": 19,
+      "comments": [],
+      "timestamp": "2025-04-21T14:30:47.446997Z"
+    },
+    {
+      "post_id": "post_19",
+      "user": {
+        "id": "user_10",
+        "username": "user10",
+        "profile_picture": "https://example.com/profiles/user10.jpg",
+        "is_verified": true
+      },
+      "media": [
+        {
+          "id": "media_19",
+          "type": "video",
+          "url": "https://example.com/posts/user19_1.mp4"
+        }
+      ],
+      "caption": "This is caption for post 19",
+      "likes_count": 896,
+      "is_liked": false,
+      "comments_count": 12,
+      "comments": [],
+      "timestamp": "2025-04-21T14:20:47.446997Z"
+    },
+    {
+      "post_id": "post_20",
+      "user": {
+        "id": "user_1",
+        "username": "user1",
+        "profile_picture": "https://example.com/profiles/user1.jpg",
+        "is_verified": false
+      },
+      "media": [
+        {
+          "id": "media_20",
+          "type": "image",
+          "url": "https://example.com/posts/user20_1.jpg"
+        }
+      ],
+      "caption": "This is caption for post 20",
+      "likes_count": 577,
+      "is_liked": true,
+      "comments_count": 16,
+      "comments": [],
+      "timestamp": "2025-04-21T14:10:47.446997Z"
+    }
+  ]
+}
