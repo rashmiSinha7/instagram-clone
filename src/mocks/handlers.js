@@ -17,8 +17,8 @@ const handlers = [
       role: "user",
     });
   }),
-  http.get("*/user/home", async () => {
-    const response = await import ("./data/mock_instagram_home.json");
+  http.get("*/user/details", async () => {
+    const response = await import ("./data/user_details.json");
     return HttpResponse.json(response.default);
   }),
 ];

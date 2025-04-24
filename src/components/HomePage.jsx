@@ -1,12 +1,20 @@
 import { useEffect } from "react";
-import axios from "axios";
+import { useSelector, useDispatch } from "react-redux";
+import { fetchUserDetails } from "../redux/features/user/userSlice";
+import "./homepage.css";
+import SideBar from "./SideBar";
 
 const HomePage = () => {
+  const dispatch = useDispatch();
+  const { user } = useSelector((state) => state);
   useEffect(() => {
-    axios.get("/user/home").then((res) => {
-      console.log(res.data);
-    });
-  }, []);
-  return <div>Hi</div>;
+    dispatch(fetchUserDetails());
+  }, [dispatch]);
+
+  return (
+    <div>
+      <SideBar user={user} />
+    </div>
+  );
 };
 export default HomePage;

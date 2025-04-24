@@ -8,13 +8,6 @@ import { constants } from "../constants";
 const Login = () => {
   // const counter = useSelector((state) => state.counter);
 
-  // useEffect(() => {
-  //   axios.get("/api/users").then((res) => {
-  //     console.log(res.data);
-  //   });
-  //   console.log(counter);
-  // }, []);
-
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
