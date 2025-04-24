@@ -1,0 +1,183 @@
+[
+    {
+      "id": "story_1",
+      "user": {
+        "id": "user_1",
+        "username": "samantha_92",
+        "profile_picture": "https://randomuser.me/api/portraits/women/21.jpg",
+        "is_verified": true
+      },
+      "media": [
+        {
+          "id": "media_story_1",
+          "type": "image",
+          "url": "https://picsum.photos/id/1011/400/700",
+          "timestamp": "2025-04-22T09:10:00Z"
+        }
+      ],
+      "is_seen": false
+    },
+    {
+      "id": "story_2",
+      "user": {
+        "id": "user_2",
+        "username": "jake_dev",
+        "profile_picture": "https://randomuser.me/api/portraits/men/32.jpg",
+        "is_verified": false
+      },
+      "media": [
+        {
+          "id": "media_story_2",
+          "type": "image",
+          "url": "https://picsum.photos/id/1012/400/700",
+          "timestamp": "2025-04-22T08:45:00Z"
+        }
+      ],
+      "is_seen": false
+    },
+    {
+      "id": "story_3",
+      "user": {
+        "id": "user_3",
+        "username": "emily.art",
+        "profile_picture": "https://randomuser.me/api/portraits/women/44.jpg",
+        "is_verified": true
+      },
+      "media": [
+        {
+          "id": "media_story_3",
+          "type": "image",
+          "url": "https://picsum.photos/id/1013/400/700",
+          "timestamp": "2025-04-22T07:30:00Z"
+        }
+      ],
+      "is_seen": false
+    },
+    {
+      "id": "story_4",
+      "user": {
+        "id": "user_4",
+        "username": "matthew_co",
+        "profile_picture": "https://randomuser.me/api/portraits/men/56.jpg",
+        "is_verified": false
+      },
+      "media": [
+        {
+          "id": "media_story_4",
+          "type": "image",
+          "url": "https://picsum.photos/id/1014/400/700",
+          "timestamp": "2025-04-22T06:00:00Z"
+        }
+      ],
+      "is_seen": true
+    },
+    {
+      "id": "story_5",
+      "user": {
+        "id": "user_5",
+        "username": "lily_bee",
+        "profile_picture": "https://randomuser.me/api/portraits/women/65.jpg",
+        "is_verified": true
+      },
+      "media": [
+        {
+          "id": "media_story_5",
+          "type": "image",
+          "url": "https://picsum.photos/id/1015/400/700",
+          "timestamp": "2025-04-22T04:50:00Z"
+        }
+      ],
+      "is_seen": false
+    },
+    {
+      "id": "story_6",
+      "user": {
+        "id": "user_6",
+        "username": "tom_builder",
+        "profile_picture": "https://randomuser.me/api/portraits/men/12.jpg",
+        "is_verified": false
+      },
+      "media": [
+        {
+          "id": "media_story_6",
+          "type": "image",
+          "url": "https://picsum.photos/id/1016/400/700",
+          "timestamp": "2025-04-22T04:00:00Z"
+        }
+      ],
+      "is_seen": true
+    },
+    {
+      "id": "story_7",
+      "user": {
+        "id": "user_7",
+        "username": "zoe_sky",
+        "profile_picture": "https://randomuser.me/api/portraits/women/23.jpg",
+        "is_verified": true
+      },
+      "media": [
+        {
+          "id": "media_story_7",
+          "type": "image",
+          "url": "https://picsum.photos/id/1017/400/700",
+          "timestamp": "2025-04-22T03:15:00Z"
+        }
+      ],
+      "is_seen": false
+    },
+    {
+      "id": "story_8",
+      "user": {
+        "id": "user_8",
+        "username": "harry_c",
+        "profile_picture": "https://randomuser.me/api/portraits/men/17.jpg",
+        "is_verified": false
+      },
+      "media": [
+        {
+          "id": "media_story_8",
+          "type": "image",
+          "url": "https://picsum.photos/id/1018/400/700",
+          "timestamp": "2025-04-22T02:20:00Z"
+        }
+      ],
+      "is_seen": true
+    },
+    {
+      "id": "story_9",
+      "user": {
+        "id": "user_9",
+        "username": "rachel_reads",
+        "profile_picture": "https://randomuser.me/api/portraits/women/52.jpg",
+        "is_verified": true
+      },
+      "media": [
+        {
+          "id": "media_story_9",
+          "type": "image",
+          "url": "https://picsum.photos/id/1019/400/700",
+          "timestamp": "2025-04-22T01:00:00Z"
+        }
+      ],
+      "is_seen": false
+    },
+    {
+      "id": "story_10",
+      "user": {
+        "id": "user_10",
+        "username": "dev_danny",
+        "profile_picture": "https://randomuser.me/api/portraits/men/90.jpg",
+        "is_verified": true
+      },
+      "media": [
+        {
+          "id": "media_story_10",
+          "type": "image",
+          "url": "https://picsum.photos/id/1020/400/700",
+          "timestamp": "2025-04-22T00:10:00Z"
+        }
+      ],
+      "is_seen": false
+    }
+  ]
+  

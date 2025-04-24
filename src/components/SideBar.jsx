@@ -9,7 +9,7 @@ import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlin
 import AddBoxOutlinedIcon from "@mui/icons-material/AddBoxOutlined";
 import ProfilePhoto from "./assets/ProfilePhoto";
 
-const SideBar = ({user}) => {
+const SideBar = ({userDetails}) => {
 
   const navTabs = useMemo(() => {
     return [
@@ -22,11 +22,11 @@ const SideBar = ({user}) => {
       { label: "Create", icon: <AddBoxOutlinedIcon />, id: "7" },
       {
         label: "Profile",
-        icon: <ProfilePhoto url={user?.userDetails?.profile_picture} />,
+        icon: <ProfilePhoto url={userDetails?.profile_picture} />,
         id: "8",
       },
     ];
-  }, [user]);
+  }, [userDetails]);
 
   return (
     <>

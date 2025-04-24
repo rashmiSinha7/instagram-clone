@@ -2,13 +2,6 @@
 import { http, HttpResponse } from "msw";
 
 const handlers = [
-  http.get("*/api/users", ({ params }) => {
-    return HttpResponse.json({
-      id: params.id,
-      title: "Porcelain Mug",
-      price: 9.99,
-    });
-  }),
   http.post("*/api/login", () => {
     return HttpResponse.json({
       id: "123",
@@ -18,7 +11,11 @@ const handlers = [
     });
   }),
   http.get("*/user/details", async () => {
-    const response = await import ("./data/user_details.json");
+    const response = await import("./data/user_details.json");
+    return HttpResponse.json(response.default);
+  }),
+  http.get("*/user/stories", async () => {
+    const response = await import("./data/stories.json");
     return HttpResponse.json(response.default);
   }),
 ];
