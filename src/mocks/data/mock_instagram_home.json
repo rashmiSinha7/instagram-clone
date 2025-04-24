@@ -1,8 +1,8 @@
 {
   "user": {
     "id": "1000",
-    "username": "current_user",
-    "full_name": "Current User",
+    "username": "rashmi_sinha",
+    "full_name": "Rashmi Sinha",
     "profile_picture": "https://example.com/profiles/current_user.jpg",
     "is_verified": true
   },
