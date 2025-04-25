@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+/* sidebar */
 .sideBar {
   height: 100vh;
   width: 220px;
@@ -39,7 +40,9 @@
   cursor: pointer;
 }
 
-.stories{
+/* stroies*/
+
+.stories {
   height: 100px;
   width: 100px;
   margin-left: 10px;
@@ -51,11 +54,11 @@
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  background-color: rgba(255,255,255,0.8);
+  background-color: rgba(255, 255, 255, 0.8);
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;  
+  cursor: pointer;
 }
 
 .nav-button.left {
@@ -64,4 +67,13 @@
 
 .nav-button.right {
   right: 20px;
+}
+
+/* feed*/
+.feed {
+  height: 600px;
+  width: 550px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
 }
