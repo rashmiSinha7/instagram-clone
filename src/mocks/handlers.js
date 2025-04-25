@@ -18,6 +18,10 @@ const handlers = [
     const response = await import("./data/stories.json");
     return HttpResponse.json(response.default);
   }),
+  http.get("*/user/feeds", async () => {
+    const response = await import("./data/posts.json");
+    return HttpResponse.json(response.default);
+  }),
 ];
 
 export default handlers;
