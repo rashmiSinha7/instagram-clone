@@ -1,9 +1,26 @@
 import "./homepage.css";
-import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord";
-import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
-import VerifiedIcon from "@mui/icons-material/Verified";
+import { useSelector, useDispatch } from "react-redux";
+import FeedHeader from "./FeedHeader";
+import FeedFooter from "./FeedFooter";
+import { updateLikes } from "../redux/features/feeds/feedSlice";
 
-const Feeds = ({ feeds }) => {
+const Feeds = () => {
+  const { feeds } = useSelector((state) => state.feed);
+
+  const dispatch = useDispatch();
+
+  const setLikes = (isLiked, post_id) => {
+    let updatedState = feeds.map((item) => {
+      if (item.post_id == post_id) {
+        return {
+          ...item,
+          is_liked: isLiked,
+          likes_count: isLiked ? item.likes_count + 1 : item.likes_count - 1,
+        };
+      } else return item;
+    });
+    dispatch(updateLikes(updatedState));
+  };
   const getPostedTime = (time) => {
     const t2 = new Date();
     const t1 = new Date(time);
@@ -16,49 +33,27 @@ const Feeds = ({ feeds }) => {
   return (
     <div className="absolute top-[140px] left-[320px] flex flex-col justify-center items-center w-[600px]">
       {feeds?.map((item) => {
-        console.log(item);
         return (
           <div className="feed">
-            <div className="text-black flex justify-between w-[450px]">
-              <div className="text-black flex">
-                <img
-                  src={item?.user?.profile_picture}
-                  className="rounded-4xl h-10 w-10 border-2 border-pink-500 p-0.5"
-                />
-                <span className="text-black font-bold pt-2 pl-2">
-                  {item?.user?.username}
-                </span>
-                {item?.user?.is_verified && (
-                  <VerifiedIcon
-                    color="primary"
-                    style={{
-                      marginTop: "13px",
-                      fontSize: "15px",
-                      marginLeft: "8px",
-                    }}
-                  />
-                )}
-                <span className=" pt-2 pl-2">
-                  <FiberManualRecordIcon
-                    fontSize="inherit"
-                    color="disabled"
-                    style={{ fontSize: "8px" }}
-                  />
-                </span>
-                <span className="pt-[13px] pl-2 text-xs">
-                  {getPostedTime(item?.timestamp)}
-                </span>
-              </div>
-              <div className=" pt-2 pl-2">
-                <MoreHorizIcon />
-              </div>
-            </div>
+            <FeedHeader
+              time={getPostedTime(item?.timestamp)}
+              is_verified={item?.user?.is_verified}
+              username={item?.user?.username}
+              profile_picture={item?.user?.profile_picture}
+            />
             <div>
               <img
                 src={item?.media[0]?.url}
-                className="h-[530px] w-[450px] object-cover mt-3 rounded-[2px]"
+                className="h-[530px] w-[450px] object-cover mt-3 rounded-[3px] border-1 border-gray-200"
               />
             </div>
+            <FeedFooter
+              likes_count={item?.likes_count}
+              is_liked={item?.is_liked}
+              setLikes={setLikes}
+              post_id={item?.post_id}
+              caption={item?.caption}
+            />
           </div>
         );
       })}
