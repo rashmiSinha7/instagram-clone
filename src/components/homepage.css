@@ -71,9 +71,17 @@
 
 /* feed*/
 .feed {
-  height: 600px;
+  height: fit-content;
   width: 550px;
   margin-bottom: 50px;
   display: flex;
   flex-direction: column;
+}
+
+.icons{
+  cursor: pointer;
+}
+
+.icons:hover {
+  opacity: 0.5;
 }

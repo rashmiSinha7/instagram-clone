@@ -12,7 +12,6 @@ const HomePage = () => {
   const dispatch = useDispatch();
   const { userDetails } = useSelector((state) => state.user);
   const { data } = useSelector((state) => state.stories);
-  const { feeds } = useSelector((state) => state.feed);
 
   useEffect(() => {
     dispatch(fetchUserDetails());
@@ -20,14 +19,13 @@ const HomePage = () => {
     dispatch(fetchUserFeeds());
   }, [dispatch]);
 
-  console.log(feeds);
 
   return (
     <div className="overflow-clip">
       <SideBar userDetails={userDetails} />
       <div className="flex flex-col w-full">
         <StoriesCarousel data={data} />
-        <Feeds feeds={feeds} />
+        <Feeds />
       </div>
     </div>
   );

@@ -13,7 +13,11 @@ export const fetchUserFeeds = createAsyncThunk("user/feeds", async () => {
 const feedSlice = createSlice({
   name: "feeds",
   initialState,
-  reducers: {},
+  reducers: {
+    updateLikes: (state, action) => {
+      state.feeds = action.payload;
+    },
+  },
   extraReducers: (builder) => {
     builder
       .addCase(fetchUserFeeds.pending, (state) => {
@@ -31,4 +35,5 @@ const feedSlice = createSlice({
   },
 });
 
+export const { updateLikes } = feedSlice.actions;
 export default feedSlice.reducer;
