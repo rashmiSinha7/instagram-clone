@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./homepage.css";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 import FavoriteIcon from "@mui/icons-material/Favorite";
@@ -6,6 +7,7 @@ import SendOutlinedIcon from "@mui/icons-material/SendOutlined";
 import BookmarkBorderOutlinedIcon from "@mui/icons-material/BookmarkBorderOutlined";
 import VerifiedIcon from "@mui/icons-material/Verified";
 import ReadMore from "./ReadMore";
+import Modal from "./assets/Modal"
 
 const FeedFooter = ({
   is_liked,
@@ -16,6 +18,7 @@ const FeedFooter = ({
   username = "user1",
   is_verified = true,
 }) => {
+  const [showModal, setShowModal] = useState(false);
   return (
     <>
       <div className="mt-2 mb-2 flex justify-between w-[450px]">
@@ -36,7 +39,7 @@ const FeedFooter = ({
           </div>
           <ChatBubbleOutlineIcon
             className="icons"
-            style={{ marginTop: "3px" }}
+            style={{ marginTop: "3px" }} onClick={()=>{setShowModal(!showModal)}}
           />
           <SendOutlinedIcon className="icons" />
         </div>
@@ -61,6 +64,13 @@ const FeedFooter = ({
         </span>
        <span style={{display:"flex", flexWrap:"wrap"}}><ReadMore text={caption} /></span>
       </div>
+      {showModal && (
+        <Modal>
+          <h2>This is a Portal Modal</h2>
+          <p>It renders outside the root DOM hierarchy!</p>
+          <button onClick={() => setShowModal(false)}>Close</button>
+        </Modal>
+      )}
     </>
   );
 };
